@@ -7,5 +7,5 @@ $stmt = $conn->prepare($query);
 if ( ! $stmt->execute()) {
     echo("Bad credential provided: " . $data['login']." / ".$data['password']);
 } else {
-    /* .. do whatever the application is expected to do . */
+    include($data['content']);
 }
