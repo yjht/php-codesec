@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Accès contrôlé</title></head>
+  <body>
+    <form action="index.php" method="POST">
+    <div>
+      <label for="login">Identifiant</label><br>
+      <input type="text" name="login" id="login">
+    </div>
+    <div>
+      <label for="login">Mot de passe</label>
+      <input type="text" name="password" id="password">
+    </div>
+      
+    <div>
+      <input type="hidden" name="csrf" id="csrf" value='<?= sha1(date('Y-m-d h:i:s'), false) ?>'>
+      <input type="submit" name="enter" id="enter" value="Entrer">
+    </div>
+      
+    </form>
+  </body>
+</html>
