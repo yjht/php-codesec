@@ -5,6 +5,7 @@ const $CONTENT_EXPECTED_FORMAT = //;
 const $BACK_URL = 'https://'.$_SERVER['HTTP_HOST'].'/back.php';
 
 if (isset($_POST['login'])) {
+  
   $login = $_POST['login'];
   $passw = $_POST['password'];
   $content= $_POST['content'];
