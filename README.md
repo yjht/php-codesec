@@ -12,7 +12,9 @@ Le rapport est attendu dans un format largement reconnu, que ce soit un format O
 ### exemple : 
 | Id | Ficher (ligne) | Vulnérabilité | requête et payload | Sévérité | Difficulté | Recommandation | Priorité |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | login.html | Divulgation d'informations sensibles (code de génération du jeton CSRF) | GET /login.html | moyen | Facile | remplacer l'extension `html` par `php` | 1 |
+| 0 | login.html (16) | Divulgation d'informations sensibles (code de génération du jeton CSRF) | GET /login.html | moyen | Facile | remplacer l'extension `html` par `php` pour éviter l'affichage de la source | moyenne |
 
 ## Durée estimée
 La charge à allouer pour la réalisation de cet audit ne devrait pas dépasser 2h pour un développeur ayant une connaissance basique du langage PHP. 
+
+L'évaluation du rapport sera mise autant sur le fond (identification, classification des vulnérabilités et impacts) que la forme.
